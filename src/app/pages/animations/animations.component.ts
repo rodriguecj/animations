@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   animations: [
     trigger('openClose', [
       state('open', style({
-        height: '200px',
+        height: '202x',
         opacity: 1,
         backgroundColor: 'aqua'
       })),
