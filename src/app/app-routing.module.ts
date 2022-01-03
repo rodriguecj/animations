@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'formulario',
     loadChildren : () => import(/* webpackChunkName: "formulario"*/'./pages/form/form.module').then( (m) => m.FormModule)
   },
+  { 
+    path: 'animations', 
+    loadChildren: () => import(/* webpackChunkName: "animaciones"*/'./pages/animations/animations.module').then(m => m.AnimationsModule)
+  },
   {
     path: '*',
     redirectTo: ''
